@@ -7,6 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.ChatColor;
 
 	/*
 	I thought making death messages limited to 50 blocks
@@ -31,7 +32,8 @@ public class LocalDeathMessageListener implements Listener {
 		for(Player p : Bukkit.getOnlinePlayers()) {
 			if(loc.distance(p.getLocation()) < 50) {
 				// make it red and all for extra spook effect
-				p.sendMessage("&4&l"+deathMessage);
+				// don't ask why this has to be like this, it just has to be.
+				p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + deathMessage);
 			}
 		}
 	}
