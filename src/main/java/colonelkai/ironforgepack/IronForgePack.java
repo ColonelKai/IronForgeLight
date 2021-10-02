@@ -3,6 +3,7 @@ package colonelkai.ironforgepack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import colonelkai.ironforgepack.LightManager.LightManager;
+import colonelkai.ironforgepack.LocalDeathMessage.LocalDeathMessageListener;
 import colonelkai.ironforgepack.PickaxeModifiers.PickaxeModifierListener;
 
 public final class IronForgePack extends JavaPlugin {
@@ -15,6 +16,7 @@ public final class IronForgePack extends JavaPlugin {
 
         this.getServer().getPluginManager().registerEvents(new PickaxeModifierListener(), this);
         this.getServer().getPluginManager().registerEvents(new LightManager(), this);
+        this.getServer().getPluginManager().registerEvents(new LocalDeathMessageListener(), this);
     }
 
     @Override

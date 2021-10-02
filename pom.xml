@@ -6,7 +6,7 @@
 
     <groupId>ColonelKai</groupId>
     <artifactId>IronForgePack</artifactId>
-    <version>1.2-DEBUG</version>
+    <version>1.3b</version>
     <packaging>jar</packaging>
 
     <name>IronForgePack</name>
