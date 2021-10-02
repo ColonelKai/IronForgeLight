@@ -1,0 +1,4 @@
+name: IronForgeLight
+version: '${project.version}'
+main: colonelkai.ironforgepack.IronForgePack
+api-version: 1.15
