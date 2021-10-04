@@ -6,13 +6,13 @@
 
     <groupId>ColonelKai</groupId>
     <artifactId>IronForgePack</artifactId>
-    <version>1.3c</version>
+    <version>1.4</version>
     <packaging>jar</packaging>
 
     <name>IronForgePack</name>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>16</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -26,22 +26,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
         <resources>
@@ -57,6 +41,15 @@
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
+        <repository>
+            <id>org.jetbrains</id>
+            <url>https://mvnrepository.com/artifact/org.jetbrains/annotations</url>
+        </repository>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/mosemister/BukkitCommandSystem</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -65,6 +58,20 @@
             <artifactId>spigot-api</artifactId>
             <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>16.0.2</version>
+			<scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mose.command</groupId>
+            <artifactId>bukkit-command-system</artifactId>
+            <version>1.1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

@@ -6,6 +6,12 @@ import colonelkai.ironforgepack.LightManager.LightManager;
 import colonelkai.ironforgepack.LocalDeathMessage.LocalDeathMessageListener;
 import colonelkai.ironforgepack.PickaxeModifiers.PickaxeModifierListener;
 
+/*************************************************************************************
+ *                          PLANNED FUTURE FEATURES (TODO)                           *
+ * -   A WAY TO SEAL BOOKS WITH NAMES, AND THE BREAKING OF SAIL ONCE THEY ARE OPENED *
+ *                                -   PROFESSIONS LOL                                *
+ *************************************************************************************/
+
 public final class IronForgePack extends JavaPlugin {
 
     public static java.util.logging.Logger logger;
