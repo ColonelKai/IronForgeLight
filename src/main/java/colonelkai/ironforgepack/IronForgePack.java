@@ -1,15 +1,15 @@
 package colonelkai.ironforgepack;
 
+import colonelkai.ironforgepack.plugin.modules.Modules;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import colonelkai.ironforgepack.LightManager.LightManager;
-import colonelkai.ironforgepack.LocalDeathMessage.LocalDeathMessageListener;
-import colonelkai.ironforgepack.PickaxeModifiers.PickaxeModifierListener;
-
 /*************************************************************************************
- *                          PLANNED FUTURE FEATURES (TODO)                           *
- * -   A WAY TO SEAL BOOKS WITH NAMES, AND THE BREAKING OF SAIL ONCE THEY ARE OPENED *
- *                                -   PROFESSIONS LOL                                *
+                                THINGS TO IMPLEMENT IN THE FUTURE
+
+ todo A way to seal books
+ todo Professions lol
+ todo the madeby/madein feature
+
  *************************************************************************************/
 
 public final class IronForgePack extends JavaPlugin {
@@ -19,16 +19,16 @@ public final class IronForgePack extends JavaPlugin {
     @Override
     public void onEnable() {
         IronForgePack.logger = this.getLogger();
-
-        this.getServer().getPluginManager().registerEvents(new PickaxeModifierListener(), this);
-        this.getServer().getPluginManager().registerEvents(new LightManager(), this);
-        this.getServer().getPluginManager().registerEvents(new LocalDeathMessageListener(), this);
+        enableModules();
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+    private void enableModules() {
+        Modules.set
+                .forEach(module -> {
+                    module.enable(this);
+                    logger.info("Enabled Module: " + module.toString());
+                        }
+                    );
     }
-
 
 }

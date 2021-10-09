@@ -46,9 +46,8 @@
             <url>https://mvnrepository.com/artifact/org.jetbrains/annotations</url>
         </repository>
         <repository>
-            <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/mosemister/BukkitCommandSystem</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
@@ -68,10 +67,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.mose.command</groupId>
-            <artifactId>bukkit-command-system</artifactId>
-            <version>1.1.0</version>
-            <scope>compile</scope>
+            <groupId>com.github.mosemister</groupId>
+            <artifactId>BukkitCommandSystem</artifactId>
+            <version>1.1.3</version>
         </dependency>
     </dependencies>
 </project>

@@ -11,7 +11,7 @@ import colonelkai.ironforgepack.IronForgePack;
 
 import org.bukkit.entity.Monster;
 
-public class LightManager implements Listener {
+public class LightManagerListener implements Listener {
 	@EventHandler
     public void onEntitySpawn(CreatureSpawnEvent event) {
         if(event.getSpawnReason() != SpawnReason.NATURAL) {
