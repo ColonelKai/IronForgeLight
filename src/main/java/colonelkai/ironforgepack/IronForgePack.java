@@ -3,14 +3,6 @@ package colonelkai.ironforgepack;
 import colonelkai.ironforgepack.plugin.modules.Modules;
 import org.bukkit.plugin.java.JavaPlugin;
 
-/*************************************************************************************
-                                THINGS TO IMPLEMENT IN THE FUTURE
-
- todo A way to seal books
- todo Professions lol
- todo the madeby/madein feature
-
- *************************************************************************************/
 
 public final class IronForgePack extends JavaPlugin {
 
