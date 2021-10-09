@@ -1,4 +1,4 @@
-package colonelkai.ironforgepack.PickaxeModifiers;
+package colonelkai.ironforgepack.pickaxemodifiers;
 
 import colonelkai.ironforgepack.IronForgePack;
 import colonelkai.ironforgepack.plugin.modules.Module;

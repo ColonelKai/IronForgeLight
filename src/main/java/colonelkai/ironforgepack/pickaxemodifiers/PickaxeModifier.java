@@ -1,4 +1,4 @@
-package colonelkai.ironforgepack.PickaxeModifiers;
+package colonelkai.ironforgepack.pickaxemodifiers;
 import java.util.List;
 
 import org.bukkit.Material;

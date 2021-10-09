@@ -1,4 +1,4 @@
-package colonelkai.ironforgepack.LocalDeathMessage;
+package colonelkai.ironforgepack.lightmanager;
 
 import colonelkai.ironforgepack.IronForgePack;
 import colonelkai.ironforgepack.plugin.modules.Module;
@@ -7,8 +7,8 @@ import org.bukkit.event.Listener;
 
 import java.util.List;
 
-public class LocalDeathMessageModule implements Module {
-    ModuleID moduleID = ModuleID.LOCALDEATHMESSAGE;
+public class LightManagerModule implements Module {
+    ModuleID moduleID = ModuleID.LIGHTMANAGER;
 
     @Override
     public void enable(IronForgePack ironforgepack) {
@@ -23,7 +23,7 @@ public class LocalDeathMessageModule implements Module {
     @Override
     public List<? extends Listener> getListeners() {
         return List.of(
-                new LocalDeathMessageListener()
+                new LightManagerListener()
         );
     }
 }

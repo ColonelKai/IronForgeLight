@@ -1,10 +1,9 @@
-package colonelkai.ironforgepack.PickaxeModifiers;
+package colonelkai.ironforgepack.pickaxemodifiers;
 
 import java.util.Arrays;
 import java.util.List;
 
 import org.bukkit.Material;
-import org.bukkit.entity.Item;
 import org.bukkit.inventory.ItemStack;
 
 public class PickaxeModifiers {

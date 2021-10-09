@@ -1,4 +1,4 @@
-package colonelkai.ironforgepack.LocalDeathMessage;
+package colonelkai.ironforgepack.localdeathmessage;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
