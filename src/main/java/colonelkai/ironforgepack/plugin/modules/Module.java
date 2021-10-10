@@ -6,7 +6,7 @@ import org.bukkit.event.Listener;
 import java.util.List;
 
 public interface Module {
-    ModuleID moduleID = null;
+    public ModuleID moduleID = null;
 
     default void enable(IronForgePack ironforgepack) {
         this.getListeners()

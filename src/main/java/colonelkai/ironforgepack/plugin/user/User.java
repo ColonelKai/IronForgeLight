@@ -12,11 +12,11 @@ public class User {
     private final Set<? extends UserModuleData> userModuleDataSet = new HashSet<>();
 
     public void save() {
-        this.userModuleDataSet.forEach(UserModuleData::saveData);
+        this.userModuleDataSet.forEach(umd -> umd.saveData(this));
     }
 
     public void load() {
-        this.userModuleDataSet.forEach(UserModuleData::loadData);
+        this.userModuleDataSet.forEach(umd -> umd.loadData(this));
     }
 
     //<editor-fold desc="getters and setters">
