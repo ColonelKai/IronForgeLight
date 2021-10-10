@@ -41,6 +41,24 @@ public interface UserModuleData {
     }
 
     default void loadData(User user) {
+        try {
+        File file = new File(Values.playerDataFolderName
+                + File.separator
+                + user.getUuid() + ".yml");
 
+        FileConfiguration fileConfig = YamlConfiguration.loadConfiguration(file);
+
+        this.data.forEach((k, v) -> {
+            this.data.put(k,  fileConfig.getString("module."+this.getModule().moduleID+"."+k));
+        });
+
+        } catch (Exception e) {
+            IronForgePack.logger.warning(
+                    Warnings.CANNOT_LOAD_UMD
+                            + "\nUser: " + user.getUuid()
+                            + "\nModule: " + this.getModule().toString()
+                            + "\nError: " + e.getMessage()
+            );
+        }
     }
 }

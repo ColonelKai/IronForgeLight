@@ -4,6 +4,7 @@ import colonelkai.ironforgepack.IronForgePack;
 import colonelkai.ironforgepack.plugin.modules.Module;
 import colonelkai.ironforgepack.plugin.modules.ModuleID;
 import org.bukkit.event.Listener;
+import org.mose.command.ArgumentCommand;
 
 import java.util.List;
 
@@ -25,5 +26,10 @@ public class LightManagerModule implements Module {
         return List.of(
                 new LightManagerListener()
         );
+    }
+
+    @Override
+    public List<? extends ArgumentCommand> getCommands() {
+        return null;
     }
 }

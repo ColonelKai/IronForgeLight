@@ -4,6 +4,7 @@ import colonelkai.ironforgepack.IronForgePack;
 import colonelkai.ironforgepack.plugin.modules.Module;
 import colonelkai.ironforgepack.plugin.modules.ModuleID;
 import org.bukkit.event.Listener;
+import org.mose.command.ArgumentCommand;
 
 import java.util.List;
 
@@ -22,6 +23,11 @@ public class PickaxeModifierModule implements Module {
 
     @Override
     public List<? extends Listener> getListeners() {
+        return null;
+    }
+
+    @Override
+    public List<? extends ArgumentCommand> getCommands() {
         return null;
     }
 }

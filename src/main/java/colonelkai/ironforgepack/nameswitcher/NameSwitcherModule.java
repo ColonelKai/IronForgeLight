@@ -1,4 +1,4 @@
-package colonelkai.ironforgepack.localdeathmessage;
+package colonelkai.ironforgepack.nameswitcher;
 
 import colonelkai.ironforgepack.IronForgePack;
 import colonelkai.ironforgepack.plugin.modules.Module;
@@ -8,8 +8,8 @@ import org.mose.command.ArgumentCommand;
 
 import java.util.List;
 
-public class LocalDeathMessageModule implements Module {
-    ModuleID moduleID = ModuleID.LOCALDEATHMESSAGE;
+public class NameSwitcherModule implements Module {
+    ModuleID moduleID = ModuleID.NAMESWITCHER;
 
     @Override
     public void enable(IronForgePack ironforgepack) {
@@ -23,9 +23,7 @@ public class LocalDeathMessageModule implements Module {
 
     @Override
     public List<? extends Listener> getListeners() {
-        return List.of(
-                new LocalDeathMessageListener()
-        );
+        return null;
     }
 
     @Override

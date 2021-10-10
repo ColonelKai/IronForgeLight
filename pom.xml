@@ -45,6 +45,10 @@
             <id>org.jetbrains</id>
             <url>https://mvnrepository.com/artifact/org.jetbrains/annotations</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -60,6 +64,12 @@
             <artifactId>annotations</artifactId>
             <version>16.0.2</version>
 			<scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.mosemister</groupId>
+            <artifactId>BukkitCommandSystem</artifactId>
+            <version>release-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
