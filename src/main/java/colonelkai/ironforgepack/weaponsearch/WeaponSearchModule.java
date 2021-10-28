@@ -1,22 +1,14 @@
-package colonelkai.ironforgepack.nameswitcher;
+package colonelkai.ironforgepack.weaponsearch;
 
 import colonelkai.ironforgepack.IronForgePack;
 import colonelkai.ironforgepack.plugin.modules.Module;
-import colonelkai.ironforgepack.plugin.modules.ModuleID;
 import org.bukkit.event.Listener;
 import org.mose.command.BukkitCommandWrapper;
 
 import java.util.HashMap;
 import java.util.List;
 
-public class NameSwitcherModule implements Module {
-    ModuleID moduleID = ModuleID.NAMESWITCHER;
-
-    @Override
-    public void enable(IronForgePack ironforgepack) {
-        Module.super.enable(ironforgepack);
-    }
-
+public class WeaponSearchModule implements Module {
     @Override
     public void disable(IronForgePack ironforgepack) {
 

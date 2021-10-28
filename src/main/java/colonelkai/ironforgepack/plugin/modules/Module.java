@@ -5,7 +5,7 @@ import org.bukkit.event.Listener;
 import org.mose.command.ArgumentCommand;
 import org.mose.command.BukkitCommandWrapper;
 
-import java.util.List;
+import java.util.*;
 
 public interface Module {
     public ModuleID moduleID = null;
@@ -19,6 +19,9 @@ public interface Module {
                         }
                 );
 
+        this.getCommands().forEach((k, v) ->
+                Objects.requireNonNull(ironforgepack.getCommand(k)).setExecutor(v)
+                );
 
     }
 
@@ -26,5 +29,5 @@ public interface Module {
 
     List<? extends Listener> getListeners();
 
-    List<? extends ArgumentCommand> getCommands();
+    HashMap<String, BukkitCommandWrapper> getCommands();
 }

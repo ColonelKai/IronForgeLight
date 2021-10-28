@@ -4,8 +4,9 @@ import colonelkai.ironforgepack.IronForgePack;
 import colonelkai.ironforgepack.plugin.modules.Module;
 import colonelkai.ironforgepack.plugin.modules.ModuleID;
 import org.bukkit.event.Listener;
-import org.mose.command.ArgumentCommand;
+import org.mose.command.BukkitCommandWrapper;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class LocalDeathMessageModule implements Module {
@@ -29,7 +30,7 @@ public class LocalDeathMessageModule implements Module {
     }
 
     @Override
-    public List<? extends ArgumentCommand> getCommands() {
+    public HashMap<String, BukkitCommandWrapper> getCommands() {
         return null;
     }
 }

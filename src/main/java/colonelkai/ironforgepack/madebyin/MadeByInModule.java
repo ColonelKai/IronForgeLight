@@ -1,17 +1,17 @@
-package colonelkai.ironforgepack.nameswitcher;
+package colonelkai.ironforgepack.madebyin;
 
 import colonelkai.ironforgepack.IronForgePack;
+import colonelkai.ironforgepack.madebyin.commands.MadeByCommand;
+import colonelkai.ironforgepack.madebyin.commands.MadeInCommand;
 import colonelkai.ironforgepack.plugin.modules.Module;
-import colonelkai.ironforgepack.plugin.modules.ModuleID;
 import org.bukkit.event.Listener;
 import org.mose.command.BukkitCommandWrapper;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
-public class NameSwitcherModule implements Module {
-    ModuleID moduleID = ModuleID.NAMESWITCHER;
-
+public class MadeByInModule implements Module {
     @Override
     public void enable(IronForgePack ironforgepack) {
         Module.super.enable(ironforgepack);
@@ -29,6 +29,15 @@ public class NameSwitcherModule implements Module {
 
     @Override
     public HashMap<String, BukkitCommandWrapper> getCommands() {
-        return null;
+        HashMap<String, BukkitCommandWrapper> hashMap = new HashMap<>();
+        // MADEBY
+        hashMap.put("MadeBy", new BukkitCommandWrapper(
+            new MadeByCommand()
+        ));
+        // MADEIN
+        hashMap.put("MadeIn", new BukkitCommandWrapper(
+            new MadeInCommand()
+        ));
+        return hashMap;
     }
 }
